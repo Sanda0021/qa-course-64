@@ -1,0 +1,76 @@
+ 1. Creare cont nou (Pozitiv)
+
+Feature: Creare cont nou
+  Ca utilizator nou
+  Vreau să-mi fac cont pe uTest
+  Pentru a deveni tester
+
+  Scenario: Creare cont cu succes
+    Given sunt pe pagina principală uTest
+    When completez numele "Stanislav Alexandrean"
+    And completez emailul "stauzeralex@gmail.com"
+    And completez parola "Test12345!"
+    And click pe "Register"
+    Then văd mesajul "Cont creat cu succes"
+
+
+2. Logare în cont (Pozitiv)
+
+Feature: Logare în cont
+  Ca tester înregistrat
+  Vreau să mă pot loga
+  Pentru a accesa platforma
+
+  Scenario: Logare cu succes
+    Given sunt pe pagina de login
+    When introduc emailul "stauzeralex@gmail.com"
+    And introduc parola "Test12345!"
+    And apas butonul "Login"
+    Then ajung la pagina mea principală
+
+3. Aplicare la proiect (Pozitiv)
+
+Feature: Aplicare proiect
+  Ca tester
+  Vreau să aplic la un proiect
+  Pentru a începe testarea
+
+  Scenario: Aplicare cu succes la proiect
+    Given sunt logat în cont
+    When deschid pagina de proiecte
+    And selectez primul proiect disponibil
+    And apas pe "Apply"
+    Then văd mesajul "Aplicare acceptată"
+
+
+ 4. Logare eșuată (Negativ)
+
+Feature: Logare în cont
+  Ca tester
+  Vreau să fiu notificat când introduc date greșite
+  Pentru a ști că trebuie să le corectez
+
+  Scenario: Logare cu parolă greșită
+    Given sunt pe pagina de login
+    When introduc emailul "stauzeralex@gmail.com"
+    And introduc parola greșită "ParolaGresita123"
+    And apas butonul "Login"
+    Then văd mesajul de eroare "Email sau parolă incorectă"
+    And rămân pe pagina de login
+
+
+5. Aplicare eșuată la proiect (Negativ)
+
+Feature: Aplicare proiect
+  Ca tester
+  Vreau să știu când nu îndeplinesc cerințele unui proiect
+  Pentru a înțelege ce îmi lipsește
+
+  Scenario: Aplicare eșuată - cerințe neîndeplinite
+    Given sunt logat în cont
+    When deschid pagina de proiecte
+    And selectez un proiect cu cerință "iOS tester"
+    And nu am specificat iOS în profilul meu
+    And apas pe "Apply"
+    Then văd mesajul "Nu îndepliniți cerințele proiectului"
+    And văd lista cerințelor care îmi lipsesc
