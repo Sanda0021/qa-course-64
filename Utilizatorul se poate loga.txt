@@ -1,0 +1,27 @@
+Feature: Logare 
+Scenario 1: Utilizatorul se poate loga 
+Given: Utilizatorul se află pe pagina de logare/înregistrare 
+When: Utilizatorul introduce numele ,, Cebanenco Sanda", adresa de email ,,scebanenco34@gmail.com ", parola ,,phU34VHyjjfjbv", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul ar trebui să se poată loga
+When: Utilizatorul introduce numele ,,Năstas Sandu", adresa de email ,,sandustas76@gmail.com ", parola ,,HARAȘO-facem", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul ar trebui să se poată loga
+When: Utilizatorul introduce numele ,,Nigher Pațan", adresa de email ,,eusuntăsta7@gmail.com ", parola ,,și-icut1ne", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul ar trebui să se poată loga
+
+Scenario 2: Utilizatorul nu se poate loga 
+Given: Utilizatorul se află pe pagina de logare/înregistrare 
+When: Utilizatorul introduce numele ,,Tataru Ludmila", adresa de email ,vasea23md4@gmail.com ", parola ,,123", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul nu ar trebui să se poată loga
+When: Utilizatorul introduce numele ,,kL PN", adresa de email ,vasea23md4@gmail.com ", parola ,,Maia3întîi", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul nu ar trebui să se poată loga
+When: Utilizatorul introduce numele ,,Andrei Năstase", adresa de email ,vasea^_^🧑🏻@gmail.com ", parola ,,gasfhuOIIUG", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul nu ar trebui să se poată loga
+When: Utilizatorul NU introduce un nume, adresa de email ,cumsănu34@gmail.com ", parola ,,opaSTAM34", confirmând-o mai apoi 
+And: Dă click pe butonul ,, Register"
+Then: Utilizatorul nu ar trebui să se poată loga

@@ -1,0 +1,26 @@
+Feature: Resetarea parolei 
+Scenario 1: Resetarea parolei pentru un utilizator existent
+Given: Utilizatorul se află pe pagina de logare în linkul "Am uitat parola"
+When: Apasă pe linkul "Am uitat parola"
+And: Introduce emailul asociat contului său
+And: Apasă pe butonul "Trimite"
+Then: Utilizatorul ar trebui să primească un email cu un link de resetare a parolei
+And: Să poată seta o parolă nouă
+
+Scenario 2: Nu se poate reseta parola pentru un utilizator existent
+Given: Utilizatorul se află pe pagina de logare în linkul "Am uitat parola"
+When: Apasă pe linkul "Am uitat parola"
+And: Introduce alt email care nu este asociat contului său
+And: Apasă pe butonul "Trimite"
+Then: Utilizatorul  nu ar trebui să primească un email cu un link de resetare
+a parolei
+When: Apasă pe linkul "Am uitat parola"
+And: Nu introduce nici un email 
+And: Apasă pe butonul "Trimite"
+Then: Utilizatorul  nu ar trebui să primească un email cu un link de resetare a parolei
+When: Apasă pe linkul "Am uitat parola"
+And: Introduce un text aleatoriu 
+And: Apasă pe butonul "Trimite"
+Then: Utilizatorul  nu ar trebui să primească un email cu un link de resetare a parolei
+
+

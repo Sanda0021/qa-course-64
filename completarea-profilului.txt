@@ -1,0 +1,31 @@
+Feature: Completarea profilului 
+Scenario 1: Utilizatorul își poate completa profilul după ce s-a logat
+Given: Utilizatorul se află în ,, Complete my profile " din secțiunea ,,Home"
+When: Utilizatorul scrie ,,I am Sanda " în ,, About Me"
+And: Selectează ,, Female " în elementul ,, Gender "
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile
+When: Utilizatorul schimbă codul poștal valid cu altul valid
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată să poată salva informașțiile
+When: Utilizatorul schimbă Orașul 
+And: Utilizatorul schimbă Țara
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile
+When: Utilizatorul nu face nici o schimbare 
+Then: Utilizatorul ar trebui să poată salva informația
+ 
+Scenario 2: Utilizatorul nu își poate completa profilul după ce s-a logat
+Given: Utilizatorul se află în ,, Complete my profile " din secțiunea ,,Home"
+When: Utilizatorul scrie cifre în ,,Firt Name "
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile
+When: Utilizatorul șterge toate datele 
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile
+When: Utilizatorul șterge data nașterii
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile
+When: Utilizatorul scrie ,, 31 13 2022" în ,, Bith Date "
+And: Dă click pe butonul ,, Save "
+Then: Utilizatorul ar trebui să poată salva informașțiile

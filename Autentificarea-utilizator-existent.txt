@@ -1,0 +1,18 @@
+Feature: Autentificare 
+Scenario 1: Utilizatorul existent se poate autentifica
+Given: Utilizatorul se află pe pagina de Autentificare 
+When: Utilizatorul tapează adresa de email și parola corectă
+And: Utilizatorul dă click pe butonul ,,Autentificare" 
+Then: Utilizatorul existent ar trebu să ajungă pe profilul său 
+
+Scenario 2: Utilizatorul existent nu se poate autentifica
+Given: Utilizatorul se află pe pagina de Autentificare 
+When: Utilizatorul tapează o adresă de email și parolă care nu are un cont existent 
+And: Utilizatorul dă click pe butonul ,,Autentificare" 
+Then: Utilizatorul existent nu ar trebu să ajungă pe profilul său 
+When: Utilizatorul tapează schimbând cu locul adresa de email și parola corectă  
+And: Utilizatorul dă click pe butonul ,,Autentificare" 
+Then: Utilizatorul existent nu ar trebu să ajungă pe profilul său 
+When: Utilizatorul tapează spațiu gol în placeholderul email și parolă
+And: Utilizatorul dă click pe butonul ,,Autentificare" 
+Then: Utilizatorul existent nu ar trebu să ajungă pe profilul său 

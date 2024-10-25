@@ -1,0 +1,11 @@
+Feature: Aplicare la proiect 
+Scenario 1: Utilizatorul poate aplica un la proiect
+Given: Utilizatorul logat se află în compartimentul ,,Projects"
+When: Utilizatorul selectează prin click un proiect 
+And: Utilizatorul aplică la proiect dând click pe elementul ,, Apply"
+Then: Utilizatorul poate aplica un la proiect
+
+Scenario 2: Utilizatorul nu poate aplica un la proiect din cauza unei erori  
+Given: Utilizatorul logat se află în detaliile unui proiect care nu corespunde cu cerințele din profilul său
+When: Utilizatorul aplică la proiect dând click pe butonul,, Apply"
+Then: Utilizatorul nu poate aplica un la proiect.
