@@ -1,0 +1,32 @@
+                      
+Descriere : Utilizatoru poate deschide notificarile de task-uri
+Tipul Test Case-ului : UI, Usability, Security
+Precondiții:
+·       Dispozitiv conectat la reteaua de alimentare sau pe baterie
+·       Sistem de operare
+·       Internet
+·       Browser
+        Utilizatoru are profil de logare.
+Medium: www.utest.com
+Pasi de reproducere:
+1.Porneste dispozitivul
+2.Conecteaza-te la reteaua de internet
+3.Deschide browser-ul
+4.Tapeaza  in bara de cautare ”www.utest.com ”
+5.Apasa tasta “Enter”
+6.Localizeaza ”Log In”
+7. Da click pe ”Log In”
+7.Localizeaza ”Notificarile”
+Atasament: JPG.3
+Severitate : 10/10
+Prioritate : 10/10
+Incercari de a repeta : 0- se reproduce de fiecare data 
+Rezultatul asteptat: Utilizatoru  poate  deschide notificarile de task-uri
+ 
+Rezulatul actual: Utilizatoru nu poate  deschide notificarile de task-uri
+
+Nume QA: StauzeR
+Nume programator : Black Stile  
+Data si ora: 03.11.2024 ora 12:23
+
+
