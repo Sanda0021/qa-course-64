@@ -1,0 +1,46 @@
+Titlu: Adresa de email nu poate fi modificată
+Descriere : Adresa de email nu poate fi modificată
+
+Precondiții
+
+Dispozitiv conectat la rețea de alimentare sau pe baterie
+Browser
+Sistem de operare
+Acces la Internet
+Cont existent și logat 
+
+Mediu : https://www.utest.com/
+
+Pași de reproducere  :
+
+1.Pornește dispozitivul
+2.Conectează-te la rețeaua de Internet
+3.Deschide browser-ul
+4.Tapează "https://www.utest.com/" în bara de căutare
+5.Apasa tasta “enter”
+6.Inră pe pagina de profil 
+7.Localizează secțiunea "Home"
+8.Dă click pe secțiunea "Home"
+9.Localizează secțiunea "Complete my profile "
+10.Dă click pe secțiunea "Complete my profile "
+11. Localizează secțiunea "email" 
+12. Schimbă email-ul , cu altul existent și valid 
+13.Dă click pe secțiunea "Save"
+14.Localizează secțiunea "Save "
+
+Numărul de repetări: Nu necesită repetare suplimentare 
+
+Atașament : 1.jpg8
+
+Rezultatul asteptat :  Adresa de email poate fi modificată
+Rezultatul actual : Adresa de email nu poate fi modificată
+
+Severitate : 7/10
+
+Prioritate : 2/10
+
+Nume QA : Cebanenco Sanda
+
+Nume programator : Puiu Andreia
+
+Data si ora : 03.11.2024 , 12:20
